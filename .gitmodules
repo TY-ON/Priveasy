@@ -1,0 +1,9 @@
+[submodule "Priveasy_AI"]
+	path = Priveasy_AI
+	url = https://github.com/TY-ON/Priveasy_AI.git
+[submodule "Priveasy_back"]
+	path = Priveasy_back
+	url = https://github.com/TY-ON/Priveasy_back.git
+[submodule "Priveasy_front"]
+	path = Priveasy_front
+	url = https://github.com/TY-ON/Priveasy_front.git
