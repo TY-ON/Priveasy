@@ -1,0 +1,25 @@
+services:
+  backend:
+    build:
+      context: ./Priveasy_back
+      dockerfile: Dockerfile
+    container_name: priveasy_back
+    environment:
+      - PORT=3000
+    ports:
+      - "30010:3000"
+    networks:
+      - ai
+  ai:
+    build:
+      context: ./Priveasy_AI/
+      dockerfile: Dockerfile
+    container_name: priveasy_AI
+    environment:
+      - GOOGLE_APPLICATION_CREDENTIALS=/credentials/adc.json
+    networks:
+      - ai
+
+networks:
+  ai:
+    driver: bridge
